@@ -1,21 +1,34 @@
-import Image from 'next/image'
-import "../app/app.scss"
-import Navbar from './components/navbar/Navbar'
-import Test from './Test'
-import React from 'react';
+"use client";
+import "../app/app.scss";
+import Navbar from "./components/navbar/Navbar";
+import React from "react";
+import Hero from "./components/hero/Hero";
+import Technology from "./components/technology/Technology";
+import Services from "./components/services/Services";
+import Portfolio from "./components/portfolio/Portfolio";
+import Contact from "./components/contacts/Contact";
+import Cursor from "./components/cursor/Cursor";
 export default function Home() {
   return (
     <div>
-      <section> 
-        <Navbar/>
+      <Cursor />
+      <section id="Homepage">
+        <Navbar />
+        <Hero />
       </section>
-      <section>Parallax</section>
-      <section>Services</section>
-      <section>Portfolio1</section>
-      <section>Portfolio2</section>
-      <section>Portfolio3</section>
-      <section>contact</section>
-     
+      <section id="Services">
+        <Technology type="services" />
+      </section>
+      <section>
+        <Services />
+      </section>
+      <section id="Portfolio">
+        <Technology type="portfolio" />
+      </section>
+      <Portfolio />
+      <section id="Contact">
+        <Contact />
+      </section>
     </div>
-  )
+  );
 }
