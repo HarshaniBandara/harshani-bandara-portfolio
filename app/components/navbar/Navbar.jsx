@@ -13,7 +13,7 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Developer
+       
         </motion.span>
         <div className="social">
         <a href="https://medium.com/@harshanimadhushani51">
@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="www.linkedin.com/in/harshanibandara">
             <img src='./linkedin.png' alt="linkedin" className="social-img" />
           </a>
-          <a href="harshani.19@cse.mrt.ac.lk">
+          <a href="mailto:harshani.19@cse.mrt.ac.lk">
             <img src='./gmail.png' alt="gmail" className="social-img" />
           </a>
         </div>
