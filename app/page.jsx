@@ -22,9 +22,9 @@ export default function Home() {
       <section>
         <Services />
       </section>
-      <section id="Portfolio">
+      {/* <section id="Portfolio">
         <Technology type="portfolio" />
-      </section>
+      </section> */}
       <Portfolio />
       <section id="Contact">
         <Contact />
